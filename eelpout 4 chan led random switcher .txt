@@ -1,12 +1,13 @@
 
-void setup;
+void setup()
+{
 
 	int randled = 1;
 	int randtime = 1;
 	int myarray[4]={ PIN MAP HERE};
-
-void loop;
-
+}
+void loop()
+{
 	randled = random(0,4); //number 0-4
 	randtime = random(250,1251); //time from 1/4 sec to 1.125
 
@@ -14,3 +15,5 @@ void loop;
 	analogWrite(myarray[randled]) 255;
 	delay(randledtime);
 	analogWrite(myarray[randled]) 0;
+	
+}	
